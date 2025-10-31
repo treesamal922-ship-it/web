@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="تأجير رافعات, تأجير فوركلفت, رافعات شوكية, تأجير كرين, ونش, تأجير ونش, تأجير رافعة في الرياض, Forklift rental in Riyadh, crane rental in Riyadh, forklift and crane rental, Riyadh forklift services, رافعات في الرياض, خدمات الرفع والنقل">
+<meta name="description" content="شركة متخصصة في تأجير الرافعات والونشات والفوركلفت في الرياض. نقدم خدمات رفع ونقل احترافية بأسعار منافسة لجميع المشاريع. Forklift and crane rental in Riyadh.">
+<meta property="og:title" content="تأجير رافعات وفوركلفت وكرين في الرياض | Forklift and Crane Rental in Riyadh">
+<meta property="og:description" content="أفضل خدمات تأجير الرافعات والفوركلفت في الرياض. اتصل بنا الآن للحصول على عرض سعر مميز.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<meta name="robots" content="index, follow">
+<title>تأجير رافعات وفوركلفت وكرين في الرياض | Forklift and Crane Rental in Riyadh</title>
+
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:"Cairo", sans-serif; }
+  body { background: #cfdde4; color: #222; scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
+  /* ====== Header ====== */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #0a2342;
+    color: white;
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .logo { font-weight:bold; font-size:1.5rem; cursor:pointer; }
+
+  nav.desktop-nav {
+    display: flex;
+    gap: 100px;
+  }
+  nav.desktop-nav a {
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:15px;
+    transition:0.3s ease;
+    font-size:0.95rem;
+  }
+  nav.desktop-nav a span.en { font-size:0.75rem; color:#a0eaff; margin-top:2px; }
+  nav.desktop-nav a:hover { background: rgba(0,255,255,0.2); border-radius:25px; color:#00eaff; }
+
+  /* البحث دائمًا خارج المنيو */
+  .search-container {
+    flex:1;
+    display:flex;
+    justify-content:center;
+  }
+  .search-box {
+    width:250px;
+    padding:10px 15px;
+    
+    font-size:1rem;
+    border:none;
+    border-radius:35px;
+    background: linear-gradient(145deg, #cfdde4, #cfdde4);
+    color:#000;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25), inset 0 -3px 6px rgba(255,255,255,0.2);
+    outline:none;
+    transition: all 0.3s ease;
+  }
+  .search-box::placeholder { color: rgba(8,7,7,0.8); }
+  .search-box:focus { transform: scale(1.05); }
+
+  /* Hamburger menu */
+  .hamburger {
+    display:none;
+    flex-direction: column;
+    gap:5px;
+    cursor:pointer;
+  }
+  .hamburger div {
+    width:25px;
+    height:3px;
+    background:white;
+  }
+
+  /* Sidebar menu for mobile */
+  .mobile-menu {
+    position: fixed;
+    top:0;
+    right:-100%;
+    width:220px;
+    height:100%;
+    background:#0a2342;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:60px 20px;
+    transition: right 0.3s ease;
+    z-index:2000;
+  }
+  .mobile-menu.show { right:0; }
+  .mobile-menu a { color:white; text-decoration:none; font-size:1.2rem; font-weight:bold; display:flex; flex-direction:column; }
+  .mobile-menu a span.en { font-size:0.85rem; color:#a0eaff; margin-top:2px; }
+
+  /* ===== Hero ===== */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #cfdde4;
+    gap: 100px;
+    min-height: 100vh;
+  
+  }
+  .hero-text {
+    flex: 1;
+   max-width: 100%;
+  text-align: center;
+  }
+  .hero-text h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom:50px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #002655, #003b7a, #001835);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite, shadowMove 2s ease-in-out infinite alternate;
+    transition: transform 0.5s ease, background-size 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .hero-text h2:hover { transform: translateY(-10px); background-size: 100% auto; }
+  .hero-text p {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #002655, #003b7a, #001835);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite, shadowMove 2s ease-in-out infinite alternate;
+    transition: transform 0.5s ease, background-size 0.5s ease;
+    cursor: pointer;
+  }
+  .hero-text p:hover { transform: translateY(-10px); background-size: 100% auto; }
+  .hero-text a {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  .hero-text a:hover { background: #0056b3; }
+
+  @keyframes shine { to { background-position: 200% center; } }
+  @keyframes shadowMove {
+    0% { text-shadow: 3px 3px 5px rgba(0,0,0,0.3), 6px 6px 10px rgba(0,0,0,0.2); }
+    50% { text-shadow: 5px 5px 10px rgba(0,0,0,0.3), 10px 10px 15px rgba(0,0,0,0.2); }
+    100% { text-shadow: 3px 3px 5px rgba(0,0,0,0.3), 6px 6px 10px rgba(0,0,0,0.2); }
+  }
+
+ .hero-slider {
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 500px; /* ارتفاع افتراضي */
+  background-color: #cfdde4;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* يحافظ على نسبة الصورة */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero-slider img.active {
+  opacity: 1;
+}
+
+/* أزرار التنقل */
+.hero-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: background 0.3s;
+}
+.hero-slider button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.hero-slider .next { right: 10px; }
+.hero-slider .prev { left: 10px; }
+
+/* في الشاشات الصغيرة */
+@media (max-width:700px) {
+  .hero {
+    flex-direction: row; /* النص والصورة جنب بعض */
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+   
+  }
+
+  .hero-text {
+    flex: 1; /* يأخذ نصف المساحة */
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
+
+  .hero-text p {
+    font-size: 1.3rem;
+  }
+}
+  @media (max-width:500px) {
+  .hero-slider {
+    position: relative;
+    width: 100%;
+    height: 650px; /* ارتفاع كبير */
+    overflow: hidden;
+  }
+
+  .hero-slider img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 🔹 يظهر الصورة بالكامل بدون قص */
+    opacity: 0;
+    transform: scale(1.1); /* 🔹 تكبير بسيط داخل الإطار */
+    transition: opacity 1s ease-in-out, transform 2s ease-in-out;
+  }
+
+  .hero-slider img.active {
+    opacity: 1;
+    transform: scale(1.25); /* 🔹 تكبير ناعم يعطي إحساس بالحركة */
+  }
+
+  .hero-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.8rem;
+  }
+
+  .hero-slider .prev { left: 10px; }
+  .hero-slider .next { right: 10px; }
+}
+
+
+
+
+
+  /* ===== Sections ===== */
+  section { padding:60px 30px; }
+  .section-title h2.ar, .section-title h2.en, .gallery-services h2 { font-size:2rem; font-weight:900; background: linear-gradient(90deg,#0a2342,#007bff,#0a2342); -webkit-background-clip:text; -webkit-text-fill-color:transparent; animation: shine 4s linear infinite, shadowMove 2s ease-in-out infinite alternate; }
+
+  .service-block, .service-card { background: rgba(255,255,255,0.3);padding-left: 20px; border-radius:20px; margin-bottom:20px; display:flex; justify-content:space-between; gap:20px; transition: transform 0.3s ease, box-shadow 0.3s ease; flex-wrap:wrap; }
+  .service-card img { width:100%; height:200px; object-fit:cover; border-radius:15px; margin-bottom:10px; }
+  .whatsapp-btn { display:inline-block; padding:8px 15px; background:#25D366; color:white; border-radius:30px; text-decoration:none; font-weight:bold; transition:0.3s; }
+  .whatsapp-btn:hover { background:#1ebe5d; transform:scale(1.05); }
+
+  /* Footer */
+  .footer { background:#0a2342; padding:30px 0; color:white; text-align:center; }
+  .footer .contact-icons { display:flex; gap:40px; justify-content:center; margin:10px 0; }
+  .footer .contact-icons img { width:30px; height:30px; transition:0.3s; }
+  .footer .contact-icons img:hover { transform:scale(1.2); opacity:0.85; }
+
+  /* ===== Responsive ===== */
+  @media(max-width:992px){
+    header { flex-wrap:wrap; justify-content:space-between; }
+    nav.desktop-nav { display:none; }
+    .hamburger { display:flex; flex-direction:column; gap:5px; cursor:pointer; }
+    .hero { flex-direction:column; }
+    .hero-slider { max-width:100%; height:300px; }
+  }
+  @media(max-width:576px){
+    .hero-slider { height:250px; }
+    .service-block, .service-card { flex-direction:column; text-align:center; gap:10px; }
+  }
+
+  /* Animations */
+  @keyframes shine { to { background-position:200% center; } }
+  @keyframes shadowMove { 0%{text-shadow:3px3px5px rgba(0,0,0,0.3);}50%{text-shadow:5px5px10px rgba(0,0,0,0.3);}100%{text-shadow:3px3px5px rgba(0,0,0,0.3);} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="search-container">
+    <input type="text" class="search-box" placeholder="ابحث هنا">
+  </div>
+
+  <nav class="desktop-nav">
+    <a href="#header"><span class="ar">الرئيسية</span><span class="en">Home</span></a>
+    <a href="#services"><span class="ar">معلوماتنا</span><span class="en">About Us</span></a>
+    <a href="#gallery-services"><span class="ar">خدماتنا</span><span class="en">Services</span></a>
+    <a href="#contact"><span class="ar">تواصل</span><span class="en">Contact</span></a>
+  </nav>
+
+  <div class="hamburger">
+    <div></div><div></div><div></div>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#header"><span class="ar">الرئيسية</span><span class="en">Home</span></a>
+  <a href="#services"><span class="ar">معلوماتنا</span><span class="en">About Us</span></a>
+  <a href="#gallery-services"><span class="ar">خدماتنا</span><span class="en">Services</span></a>
+  <a href="#contact"><span class="ar">تواصل</span><span class="en">Contact</span></a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="header">
+  <div class="hero-text">
+    <h2>النخبة لتأجير جميع أنواع الرافعات الشوكية والكرينات</h2>
+    <p>Al Nukhba for renting all types of forklifts and cranes</p>
+   
+  </div>
+  <div class="hero-slider">
+    <img src="1.png" class="active" alt="Service 1">
+    <img src="2.png" alt="Service 2">
+    <img src="3.png" alt="Service 3">
+    <button class="prev">&#10095;</button>
+    <button class="next">&#10094;</button>
+  </div>
+</section>
+
+<!-- ✅ القسم الثاني -->
+<section class="services" id="services">
+  <div class="container">
+    
+    <!-- قسم الخدمات -->
+    <div class="section-title">
+      <h2 class="ar">خدماتنا</h2>
+      <h2 class="en">Services</h2>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">رافعات شوكية (فوركلفت)</h3>
+      <h3 class="en">Forklifts</h3>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">كرينات – ونش – سيزر لفت – مارلفت</h3>
+      <h3 class="en">Cranes – Winch – Scissor Lift – Marlift</h3>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">رافعات تلي هندر (تلسكوبية)</h3>
+      <h3 class="en">Telescopic Handlers</h3>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">جميع المعدات متوفرة بمختلف الأحجام لتلبية جميع احتياجاتكم</h3>
+      <h3 class="en">All equipment is available in various sizes to meet all your needs</h3>
+    </div>
+
+    <!-- قسم المميزات -->
+    <div class="section-title">
+      <h2 class="ar">مميزاتنا</h2>
+      <h2 class="en">Features</h2>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">جميع معداتنا حاصلة على شهادة الفحص TÜV تيوڤي</h3>
+      <h3 class="en">All our equipment is TÜV certified</h3>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">التزام كامل بالسلامة والجودة</h3>
+      <h3 class="en">Full commitment to safety and quality</h3>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">أسطول حديث وصيانة دورية</h3>
+      <h3 class="en">Modern fleet with regular maintenance</h3>
+    </div>
+
+    <!-- قسم شعارنا -->
+    <div class="section-title">
+      <h2 class="ar">شعارنا</h2>
+      <h2 class="en">Our Motto</h2>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">المصداقية ✔️</h3>
+      <h3 class="en">Integrity ✔️</h3>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">الوفاء بالمواعيد ✔️</h3>
+      <h3 class="en">Punctuality ✔️</h3>
+    </div>
+
+    <div class="service-block">
+      <h3 class="ar">الالتزام بإنجاز العمل في أسرع وقت ✔️</h3>
+      <h3 class="en">Commitment to completing work quickly ✔️</h3>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.services {
+  background: #cfdde4;
+ margin-top: 30px;
+}
+
+.services .container {
+  max-width: 3000px;
+  margin: 0 auto;
+}
+
+/* العناوين الرئيسية */
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.section-title h2.ar {
+  font-size: 2rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #00489b, #034ca0, #002d61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite, shadowMove 2s ease-in-out infinite alternate;
+}
+
+.section-title h2.en {
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #00489b, #034ca0, #002d61);
+  text-align: right;
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite, shadowMove 2s ease-in-out infinite alternate;
+}
+
+/* بلوك الخدمة */
+.service-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 20px;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* النص العربي */
+.service-block h3.ar {
+  font-size: 1.2rem;
+  color: #001027;
+  text-align: left;
+  flex: 1;
+}
+
+/* النص الإنجليزي */
+.service-block h3.en {
+  font-size: 1.2rem;
+  color: #003268;
+  text-align: right;
+  flex: 1;
+}
+
+/* 📱 في الجوال */
+@media (max-width: 768px) {
+  .service-block {
+   gap: clamp(1.5em, 5vw, 4em); /* ✅ تتقلص قليلاً في الجوال */
+    padding: 0.8em 1em;
+  }
+
+  .service-block h3.ar,
+  .service-block h3.en {
+    font-size: 1rem;
+  }
+}
+
+/* التأثيرات */
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+@keyframes shadowMove {
+  0% { text-shadow: 3px 3px 5px rgba(0,0,0,0.3), 6px 6px 10px rgba(0,0,0,0.2); }
+  50% { text-shadow: 5px 5px 10px rgba(0,0,0,0.3), 10px 10px 15px rgba(0,0,0,0.2); }
+  100% { text-shadow: 3px 3px 5px rgba(0,0,0,0.3), 6px 6px 10px rgba(0,0,0,0.2); }
+}
+</style>
+<!--القسم الثالث-->
+<!--القسم الثالث-->
+<section class="gallery-services" id="gallery-services">
+  <div class="container">
+    <h2 class="title-ar">خدماتنا</h2>
+    <h2 class="title-en">Our Services</h2>
+
+    <div class="services-grid">
+ <div class="services-grid">
+      <!-- الخدمة 1 -->
+      <div class="service-card">
+        <img src="5.jpg" alt="رافعات شوكية">
+        <h3 class="ar">رافعات شوكية 3 طن فوركلفت</h3>
+        <h3 class="en">3-ton Forklifts</h3>
+        <a href="https://wa.me/966537042975" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+
+      <!-- الخدمة 2 -->
+      <div class="service-card">
+        <img src="6.jpg" alt="كرينات">
+        <h3 class="ar">تليهندر رافعة تلسكوبية سيزر لفت</h3>
+        <h3 class="en">Telehandler telescopic crane Caesar lift</h3>
+        <a href="https://wa.me/966537042975" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+
+      <!-- الخدمة 3 -->
+      <div class="service-card">
+        <img src="7.jpg" alt="تلي هندر">
+        <h3 class="ar">رافعة شوكية 7 طن فوركلفت</h3>
+        <h3 class="en">7-ton Forklifts</h3>
+        <a href="https://wa.me/966537042975" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+
+      <!-- الخدمة 4 -->
+      <div class="service-card">
+        <img src="8.jpg" alt="معدات متنوعة">
+        <h3 class="ar">كرين سله كرين ونش</h3>
+        <h3 class="en">Crane basket crane winch</h3>
+        <a href="https://wa.me/966537042975" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+       <!-- 5 -->
+      <div class="service-card">
+        <img src="9.jpg" alt="معدات متنوعة">
+        <h3 class="ar">سيزر لفت</h3>
+        <h3 class="en">Caesar lift</h3>
+        <a href="https://wa.me/966537042975" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+       <!-- الخدمة 6 -->
+      <div class="service-card">
+        <img src="4.jpg" alt="معدات متنوعة">
+        <h3 class="ar">كرين ونش</h3>
+        <h3 class="en">Crane winch</h3>
+        <a href="https://wa.me/966537042975" target="_blank" class="whatsapp-btn">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.gallery-services {
+  background: #cfdde4; /* سماوي فاتح مثل الأقسام السابقة */
+  
+  text-align: center;
+  overflow: hidden;
+}
+
+.gallery-services .title-ar,
+.gallery-services .title-en {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #0a2342, #007bff, #0a2342);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite, shadowMove 2s ease-in-out infinite alternate;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  
+}
+
+.service-card {
+  background: transparent; /* بدون خلفية بيضاء */
+  border-radius: 20px;
+  padding: 0;
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+ transform: translateY(50px);
+  transition: transform 0.5s ease, opacity 0.5s ease; /* حركة سلسة */
+  display: none; /* مخفية افتراضيًا */
+}
+
+/* عند التحميل، الظهور من الأسفل */
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+}
+
+.service-card img {
+  width: 100%;
+  height:300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.service-card h3.ar {
+  font-size: 1.1rem;
+  color: #001027;
+  margin-bottom: 5px;
+}
+
+.service-card h3.en {
+  font-size: 1rem;
+  color: #003268;
+  margin-bottom: 15px;
+}
+
+/* زر واتساب */
+.whatsapp-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #25D366;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* تأثير العناوين */
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+@keyframes shadowMove {
+  0% { text-shadow: 3px 3px 5px rgba(0,0,0,0.3); }
+  50% { text-shadow: 5px 5px 10px rgba(0,0,0,0.3); }
+  100% { text-shadow: 3px 3px 5px rgba(0,0,0,0.3); }
+}
+</style>
+
+<script>
+// إضافة تأثير ظهور الخدمة عند التمرير
+const cards = document.querySelectorAll('.service-card');
+
+function revealCards() {
+  const windowHeight = window.innerHeight;
+  cards.forEach(card => {
+    const elementTop = card.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 50) {
+      card.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealCards);
+window.addEventListener('load', revealCards);
+</script>
+
+<!--القسم الرابع-->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+
+   
+
+    <!-- ✅ الجهة اليمنى: خريطة جوجل -->
+    <div class="contact-map">
+      <h2>📍 موقعنا</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.3979963143224!2d46.777506625406176!3d24.644425378070945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f070034db940f%3A0x76df6710435158b7!2z2KfZhNix2YrYp9i2INmF2K7YsdisIDE3!5e0!3m2!1sar!2s!4v1759500225476!5m2!1sar!2s" 
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.2);" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.contact-section {
+  background: #cfdde4; /* نفس لون الأقسام */
+  padding: 60px 100px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* الجهة اليسرى */
+.contact-buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-buttons h2 {
+  font-size: 2rem;
+  color: #0a2342;
+  margin-bottom: 20px;
+}
+
+.button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-buttons .btn {
+  display: block;
+  width: 480px;
+  padding: 20px;
+  margin-left: 100px;
+  margin-top: 25px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.contact-buttons .btn.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.contact-buttons .btn.call {
+  background: #007bff;
+  color: white;
+}
+
+.contact-buttons .btn:hover {
+  opacity: 0.9;
+  transform: translateY(-3px);
+}
+
+/* الجهة اليمنى: الخريطة */
+.contact-map {
+  flex: 2;
+}
+
+.contact-map h2 {
+  font-size: 2rem;
+  color: #0a2342;
+  margin-bottom: 15px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+</style>
+<!-- ✅ Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- النص الجديد -->
+    <p class="footer-text">تواصل معنا عبر</p>
+
+    <div class="contact-icons">
+  <a href="https://wa.me/966537042975" target="_blank" class="icon whatsapp">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+  </a>
+  <a href="tel:+966537042975" class="icon call">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Call">
+  </a>
+</div>
+
+<style>
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.icon {
+  width: 50px;
+  height:50px;
+  background: linear-gradient(145deg, #003366, #0059b3); /* تدرج أزرق غامق */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 85, 255, 0.4); /* لمعة خفيفة */
+  transition: 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 85, 255, 0.6);
+}
+
+.icon img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); /* يجعل الأيقونة بيضاء */
+}
+</style>
+
+    <p>&copy; 2025 شركة النخبة لتأجير الرافعات والمعدات</p>
+  </div>
+</footer>
+
+<style>
+.footer {
+  background-color: #cfdde4; /* أزرق غامق */
+  padding: 30px 0;
+  color: #001027;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #001027;
+  margin-bottom: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 90px;
+  color: #001027;
+}
+
+.contact-icons .icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  color: #001027;
+}
+
+.contact-icons .icon img:hover {
+  transform: scale(1.2);
+  opacity: 0.85;
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+</style>
+<script>
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', ()=> mobileMenu.classList.toggle('show'));
+
+// Hero slider
+let slides = document.querySelectorAll(".hero-slider img");
+let index = 0;
+const showSlide = (i) => { slides.forEach(img => img.classList.remove("active")); slides[i].classList.add("active"); }
+document.querySelector(".prev").addEventListener("click", () => { index=(index-1+slides.length)%slides.length; showSlide(index); });
+document.querySelector(".next").addEventListener("click", () => { index=(index+1)%slides.length; showSlide(index); });
+</script>
+<script>
+// البحث الحي + التمرير إلى القسم الثالث
+const searchBox = document.querySelector('.search-box');
+const serviceCards = document.querySelectorAll('.service-card');
+const gallerySection = document.getElementById('gallery-services');
+
+function filterCards() {
+  const query = searchBox.value.toLowerCase();
+  let anyMatch = false;
+
+  serviceCards.forEach(card => {
+    const arabic = card.querySelector('h3.ar').textContent.toLowerCase();
+    const english = card.querySelector('h3.en').textContent.toLowerCase();
+    if (arabic.includes(query) || english.includes(query)) {
+      card.style.display = 'block';
+      setTimeout(() => card.classList.add('show'), 10);
+      anyMatch = true;
+    } else {
+      card.style.display = 'none';
+      card.classList.remove('show');
+    }
+  });
+
+  // إذا هناك نتائج، قم بالتمرير إلى القسم
+  if (anyMatch && query.length > 0) {
+    gallerySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+// البحث أثناء الكتابة
+searchBox.addEventListener('input', filterCards);
+
+
+
+</script>
+</body>
+</html>
